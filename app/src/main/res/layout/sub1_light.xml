@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#68000000"
+        android:gravity="center"
+        android:text="照明"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lite1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#8E8585"
+        android:text="前方照明"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/lite2"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#8E8585"
+        android:text="中間照明"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/lite1"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <Button
+        android:id="@+id/lite3"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#8E8585"
+        android:text="後方照明"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/lite2"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/buttonBack1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#BF5050"
+        android:text="メニュー画面へ戻る"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/lite3"
+        tools:layout_editor_absoluteX="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
