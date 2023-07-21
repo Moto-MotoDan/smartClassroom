@@ -25,7 +25,7 @@ class Sub5projectorActivity : AppCompatActivity(){
         val buttonOn: Button = findViewById(R.id.buttonOn)
         buttonOn.setOnClickListener {
             val client: OkHttpClient = OkHttpClient()
-            val url: String = "http://192.168.0.1:5001/btb?id=1" // サーバのURLを適切なものに変更する必要があります
+            val url: String = "http://192.168.0.1:5001/btb_app?id=1" // サーバのURLを適切なものに変更する必要があります
 
             val request = Request.Builder()
                 .url(url)
